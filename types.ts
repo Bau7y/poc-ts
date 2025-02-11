@@ -43,4 +43,19 @@ function verify(type1: string | boolean){
     }
 }
 
+function valdtaNum(val: number | string){
+    if (typeof val === "string"){
+        console.log(val.toUpperCase) //se trata val como string
+    }else{
+        console.log(val) //se trata val como un numero 
+    }
+}
+
+function myArray(fabian: string[] | string){ //aqui se declara el array y se tipea el tipo de datos que va a recibir el array 
+    if (Array.isArray(fabian)){
+        console.log("Hello " + fabian.join(" and "));
+    } else{
+        console.log("Hello " + fabian.toUpperCase() + "!!");
+    };
+}
 
