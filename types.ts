@@ -59,3 +59,29 @@ function myArray(fabian: string[] | string){ //aqui se declara el array y se tip
     };
 }
 
+interface persona {
+    nombre: string;
+    apellido: string;
+    edad: number;
+    sexo: string;
+    aprobado: boolean;
+}
+
+function examenCsv(persona1: persona){
+    if (persona1.aprobado){
+        console.log("La persona " + persona1.nombre + "Ha aprobado el examen");
+        return true;
+    }else{
+        console.log("El examen se ha reprobado")
+        return false;
+    }
+}
+
+let persona1: persona = {
+    nombre: "Sebas",
+    apellido: "Rojas",
+    edad: 19,
+    sexo: "M",
+    aprobado: true
+}
+let resultado:boolean = examenCsv(persona1);
