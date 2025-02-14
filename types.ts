@@ -59,7 +59,7 @@ function myArray(fabian: string[] | string){ //aqui se declara el array y se tip
     };
 }
 
-interface persona {
+interface Persona {
     nombre: string;
     apellido: string;
     edad: number;
@@ -67,17 +67,17 @@ interface persona {
     aprobado: boolean;
 }
 
-function examenCsv(persona1: persona){
+function examenCsv(persona1: Persona){
     if (persona1.aprobado){
         console.log("La persona " + persona1.nombre + "Ha aprobado el examen");
         return true;
     }else{
-        console.log("El examen se ha reprobado")
+        console.log("El examen se ha reprobado");
         return false;
     }
 }
 
-let persona1: persona = {
+let persona1: Persona = {
     nombre: "Sebas",
     apellido: "Rojas",
     edad: 19,
@@ -85,3 +85,14 @@ let persona1: persona = {
     aprobado: true
 }
 let resultado:boolean = examenCsv(persona1);
+
+type Point = {
+    point1: number;
+    point2: number;
+}
+
+function prntP(pt: Point){
+    console.log("El type es similar a la interface por ", pt.point1, " ", pt.point2);
+}
+
+prntP({point1: 1, point2: 2});
