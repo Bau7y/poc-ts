@@ -99,11 +99,11 @@ prntP({point1: 1, point2: 2});
 
 type ID = string | number;
 
-function tringTypes(tp: string): ID{
+function tringTypes(tp: string | number): ID{
     if (tp === "string"){
-        return "string";
+        return tringTypes(tp); // as a string
     }else{
-        return 1;
+        return tp; //as a number
     }
 
 }
