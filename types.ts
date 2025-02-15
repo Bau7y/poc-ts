@@ -13,17 +13,6 @@ function printobj(ob: {ob1: string | number, ob2?: number}){ //el simbolo ? sign
 }
 printobj({ob1: "sebas"})
 
-
-//typeof
-
-function verify(type1: string | boolean){
-    if (typeof type1 === "boolean"){
-        async function dbTrue(param:string): Promise<number> {
-            return 1;
-        }
-    }
-}
-
 function valdtaNum(val: number | string){
     if (typeof val === "string"){
         console.log(val.toUpperCase) //se trata val como string
@@ -32,28 +21,9 @@ function valdtaNum(val: number | string){
     }
 }
 
-function myArray(fabian: string[] | string){ //aqui se declara el array y se tipea el tipo de datos que va a recibir el array 
-    if (Array.isArray(fabian)){
-        console.log("Hello " + fabian.join(" and "));
-    } else{
-        console.log("Hello " + fabian.toUpperCase() + "!!");
-    };
-}
-
-type Point = {
-    point1: number;
-    point2: number;
-}
-
-function prntP(pt: Point){
-    console.log("El type es similar a la interface por ", pt.point1, " ", pt.point2);
-}
-
-prntP({point1: 1, point2: 2});
-
 type ID = string | number;
 
-function tringTypes(tp: string | number): ID{
+function tringTypes(tp: string | number): ID{ //
     if (tp === "string"){
         return tringTypes(tp); // as a string
     }else{

@@ -7,3 +7,13 @@ async function test(): Promise<number>{ //una promesa es una función de la cual
         //reject (falsa)
         //then 
 }
+
+//typeof
+
+function verify(type1: string | boolean){
+    if (typeof type1 === "boolean"){
+        async function dbTrue(param:string): Promise<number> {
+            return 1;
+        }
+    }
+}

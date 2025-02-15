@@ -55,3 +55,16 @@ let persona1: Persona = {
     aprobado: true
 }
 let resultado:boolean = examenCsv(persona1);
+
+// third use, using type
+
+type Point = {
+    point1: number;
+    point2: number;
+}
+
+function prntP(pt: Point){
+    console.log("El type es similar a la interface por ", pt.point1, " ", pt.point2);
+}
+
+prntP({point1: 1, point2: 2});
