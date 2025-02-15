@@ -96,3 +96,14 @@ function prntP(pt: Point){
 }
 
 prntP({point1: 1, point2: 2});
+
+type ID = string | number;
+
+function tringTypes(tp: string): ID{
+    if (tp === "string"){
+        return "string";
+    }else{
+        return 1;
+    }
+
+}
