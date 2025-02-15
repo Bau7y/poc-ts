@@ -3,16 +3,6 @@ let obj: any = {
     c: "donald"
 }
 
-const list = [1, 2, 3];
-
-list.forEach(function val(){
-    console.log(val)
-})
-
-list.forEach((val) => {
-    console.log(val)
-});
-
 function printobj(ob: {ob1: string | number, ob2?: number}){ //el simbolo ? significa que el parametro seleccionado es opcional
     if (ob.ob2 != undefined) {
         console.log("Los objetos establecidos son " + ob.ob1, " ",  ob.ob2)
@@ -49,33 +39,6 @@ function myArray(fabian: string[] | string){ //aqui se declara el array y se tip
         console.log("Hello " + fabian.toUpperCase() + "!!");
     };
 }
-
-interface Persona {
-    nombre: string;
-    apellido: string;
-    edad: number;
-    sexo: string;
-    aprobado: boolean;
-}
-
-function examenCsv(persona1: Persona){
-    if (persona1.aprobado){
-        console.log("La persona " + persona1.nombre + "Ha aprobado el examen");
-        return true;
-    }else{
-        console.log("El examen se ha reprobado");
-        return false;
-    }
-}
-
-let persona1: Persona = {
-    nombre: "Sebas",
-    apellido: "Rojas",
-    edad: 19,
-    sexo: "M",
-    aprobado: true
-}
-let resultado:boolean = examenCsv(persona1);
 
 type Point = {
     point1: number;

@@ -1,3 +1,5 @@
+//first use
+
 interface Animal {
     name: string;
     kind: string;
@@ -24,3 +26,32 @@ let animalList: string[] = ["Leon", "Tigre", "Gato", "Perro", "Oso"];
 
 let info = guessAnimal(animal, animalList);
 console.log(info);
+
+//second use
+
+interface Persona {
+    nombre: string;
+    apellido: string;
+    edad: number;
+    sexo: string;
+    aprobado: boolean;
+}
+
+function examenCsv(persona1: Persona){
+    if (persona1.aprobado){
+        console.log("La persona " + persona1.nombre + "Ha aprobado el examen");
+        return true;
+    }else{
+        console.log("El examen se ha reprobado");
+        return false;
+    }
+}
+
+let persona1: Persona = {
+    nombre: "Sebas",
+    apellido: "Rojas",
+    edad: 19,
+    sexo: "M",
+    aprobado: true
+}
+let resultado:boolean = examenCsv(persona1);
