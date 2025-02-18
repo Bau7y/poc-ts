@@ -15,3 +15,14 @@ function printAll(strs: string | string[] | null){
     }
 }
 
+function multiply(
+    values: number[] | undefined,
+    factor: number
+): number[] | undefined{
+    if (!values){
+        return values
+    } else {
+        return values.map((x) => x * factor);
+    }
+}
+
