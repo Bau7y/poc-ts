@@ -1,4 +1,3 @@
-const n: number = obj;
 
 async function test(): Promise<number>{ //una promesa es una función de la cual el programa no necesariamente espera que se cumpla para seguir en funcionamiento 
     return 1
