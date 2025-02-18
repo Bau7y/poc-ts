@@ -24,7 +24,7 @@ function multiply(
 }
 
 function printAll2(strs: string | string[] | null) {
-    if (strs !== null) {
+    /* if (strs !== null) {
         if (typeof strs === "object") {
             for (const s of strs) {
                 console.log(s);
@@ -32,6 +32,15 @@ function printAll2(strs: string | string[] | null) {
         } else if (typeof strs === "string") {
             console.log(strs);
         }
-    }
-}
+    } */
+   if (!strs) return;
 
+   if (typeof strs === "string") {
+    console.log(strs);
+    return;
+   } 
+
+   for (const s of strs) {
+    console.log(s)
+   }  //codigo limpio atte roney
+}
