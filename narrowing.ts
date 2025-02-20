@@ -44,3 +44,8 @@ function printAll2(strs: string | string[] | null) {
     console.log(s)
    }  //codigo limpio atte roney
 }
+
+function seaOfThieves(logs: number | number[]){
+    if (typeof logs === "number") return;
+    return logs.map((x) => x * 2);
+}
