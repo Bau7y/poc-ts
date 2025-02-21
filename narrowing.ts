@@ -23,29 +23,11 @@ function multiply(
     return values.map((x) => x * factor); //Esta linea solamente se reaaliza si el if no se cumple (Es como un else) y el .map, crea una matriz en base a la orden que se le indique 
 }
 
-function printAll2(strs: string | string[] | null) {
-    /* if (strs !== null) {
-        if (typeof strs === "object") {
-            for (const s of strs) {
-                console.log(s);
-            }
-        } else if (typeof strs === "string") {
-            console.log(strs);
-        }
-    } */
-   if (!strs) return;
-
-   if (typeof strs === "string") {
-    console.log(strs);
-    return;
-   } 
-
-   for (const s of strs) {
-    console.log(s)
-   }  //codigo limpio atte roney
-}
-
 function seaOfThieves(logs: number | number[]){
     if (typeof logs === "number") return;
     return logs.map((x) => x * 2);
 }
+
+let x = Math.random() < 0.5 ? 10 : "hello world";
+
+x = 2;
