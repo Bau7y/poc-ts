@@ -31,8 +31,6 @@ function numValidation(val: UserNumbers){
 
 numValidation(input);
 
-
-
 function printAll2(strs: string | string[] | null) {
     /* if (strs !== null) {
         if (typeof strs === "object") {

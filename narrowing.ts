@@ -28,6 +28,6 @@ function seaOfThieves(logs: number | number[]){
     return logs.map((x) => x * 2);
 }
 
-let x = Math.random() < 0.5 ? 10 : "hello world";
+let x = Math.random() < 0.5 ? 10 : "hello world"; // primero va la condicion, despues del ? va lo
 
 x = 2;
